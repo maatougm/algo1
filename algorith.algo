@@ -5,22 +5,24 @@ VAR
     int j
     int voyelle
     int world
+    int char
     var str
+
 BEGIN
     str:="cette phrase est pour tester le script"
     i:=0
     while (str[i+1]!="."){
-        a:= a+1
+        char:= char+1
         i++
     }
 
-    for (j=0;j<length(str);j++ ){
+    for (j=0;j<length(str)+1;j++ ){
         if(str[j]=" "){
             word++
         }
     }
     
-    for (k=0;k<length(str);k++ ){
+    for (k=0;k<length(str)+1;k++ ){
         if(str[k] in [a,e,i,o,u,y]){
             voyelle++
         }
