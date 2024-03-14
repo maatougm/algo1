@@ -1,0 +1,28 @@
+ALGORITHM sentence
+VAR
+    int i
+    int k
+    int j
+    int voyelle
+    int world
+    var str
+BEGIN
+    str:="cette phrase est pour tester le script"
+    i:=0
+    while (str[i+1]!="."){
+        a:= a+1
+        i++
+    }
+
+    for (j=0;j<length(str);j++ ){
+        if(str[j]=" "){
+            word++
+        }
+    }
+    
+    for (k=0;k<length(str);k++ ){
+        if(str[k] in [a,e,i,o,u,y]){
+            voyelle++
+        }
+    }
+END
